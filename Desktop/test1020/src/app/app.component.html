@@ -1,0 +1,9 @@
+<!-- 屬性綁定 -->
+<input [ngModel]="taro">
+<!-- 事件綁定 -->
+<input (keyup)="shibashit($event)">
+<!-- 雙向綁定 -->
+<input type="" [(ngModel)] = 'taro'>
+<button (click)="plus()">+</button>
+<button (click)="minus()">-</button>
+<input type="text" [ngModel]="number">
