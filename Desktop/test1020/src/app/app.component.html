@@ -1,8 +1,13 @@
-<!-- 屬性綁定 -->
+<!-- 屬性綁定 []-->
+<!-- Component 變數的值一改變，Template(元件在html中渲染的內容)所插入的值也跟著改變 -->
 <input [ngModel]="taro">
-<!-- 事件綁定 -->
+<!-- 事件綁定 () -->
+<!-- 一旦觸發指定 event，就會呼叫 TypeScript 中宣告的方法 -->
 <input (keyup)="shibashit($event)">
-<!-- 雙向綁定 -->
+<!-- 雙向綁定 [()] -->
+<!-- 屬性綁定與事件綁定的結合體，當 value 在 TypeScript 發生變化，HTML 就會跟著改變。
+在 HTML 中發生變化，TypeScript 中的內容也會跟著改變 -->
+<!-- 在使用 [(ngModel)] 前，需要先在 AppModule 引用 FormsModule -->
 <input type="" [(ngModel)] = 'taro'>
 <button (click)="plus()">+</button>
 <button (click)="minus()">-</button>
